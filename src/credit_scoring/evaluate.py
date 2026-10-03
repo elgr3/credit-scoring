@@ -37,9 +37,7 @@ def plot_calibration(y_true, proba, path: Path) -> None:
     fig, ax = plt.subplots(figsize=(6, 5))
     ax.plot(mean_pred, frac_pos, "o-", label="model")
     ax.plot([0, 1], [0, 1], "--", color="grey", lw=1, label="perfect")
-    ax.set(
-        xlabel="Mean predicted probability", ylabel="Observed default rate", title="Calibration"
-    )
+    ax.set(xlabel="Mean predicted probability", ylabel="Observed default rate", title="Calibration")
     ax.legend()
     _save(fig, path)
 

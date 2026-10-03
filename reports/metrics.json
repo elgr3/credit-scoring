@@ -1,0 +1,33 @@
+{
+  "dataset": {
+    "n_rows": 150000,
+    "default_rate": 0.0668
+  },
+  "logistic_regression": {
+    "auc_roc": 0.8274,
+    "gini": 0.6547,
+    "ks": 0.5214,
+    "brier": 0.1556
+  },
+  "xgboost": {
+    "auc_roc": 0.8717,
+    "gini": 0.7434,
+    "ks": 0.594,
+    "brier": 0.1382,
+    "best_params": {
+      "model__colsample_bytree": 0.7024,
+      "model__learning_rate": 0.0113,
+      "model__max_depth": 5.0,
+      "model__min_child_weight": 15.0,
+      "model__n_estimators": 753.0,
+      "model__subsample": 0.7757
+    }
+  },
+  "top_features": [
+    "RevolvingUtilizationOfUnsecuredLines",
+    "total_late",
+    "age",
+    "NumberOfOpenCreditLinesAndLoans",
+    "NumberOfTimes90DaysLate"
+  ]
+}
